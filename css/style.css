@@ -5,10 +5,15 @@
     box-sizing: border-box;
 }
 
+html, body 
+{
+    overflow-x: hidden; 
+}
 
 body
 {
    background-color: #fdf5f5d5;
+ 
 
 }
 .btn
@@ -28,12 +33,13 @@ body
 
 .header 
 {
-    position: sticky;
+    position: fixed;
     top: 0; 
     background-color: rgba(0, 0, 0, 0.877);
     z-index:999;
     width: 100%;
-    
+  
+
 }
 
 .d-flex
@@ -777,6 +783,13 @@ textarea.input-footer {
          margin: auto;
      }
  }
+
+ @media (min-width: 1040px) and (max-width: 1400px) {
+    .header {
+        width:100%;
+       
+    }
+}
  
 
 
